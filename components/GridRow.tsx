@@ -39,7 +39,7 @@ const GridRow: React.FC<GridRowProps> = ({ year, animeList, primaryColor, lightC
   return (
     <div className="relative flex w-full items-stretch">
       {/* Absolute bottom border overlay to cover cell borders */}
-      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-black z-10 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-black z-[5] pointer-events-none" />
 
       {/* Year Column */}
       <div 
