@@ -72,7 +72,7 @@ const GridRow: React.FC<GridRowProps> = ({ year, animeList, primaryColor, lightC
                 </div>
                 
                 {/* Tooltip with Image on Hover */}
-                <div className="absolute z-20 bottom-full mb-2 hidden group-hover:flex flex-col items-center bg-black text-white p-2 rounded text-xs w-32 shadow-xl pointer-events-none">
+                <div className="absolute z-[150] bottom-full mb-2 hidden group-hover:flex flex-col items-center bg-black text-white p-2 rounded text-xs w-32 shadow-xl pointer-events-none">
                   <img 
                       src={anime.images?.common || anime.images?.medium || anime.images?.small} 
                       alt={anime.name} 
