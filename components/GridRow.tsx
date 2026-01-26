@@ -37,9 +37,7 @@ const GridRow: React.FC<GridRowProps> = ({ year, animeList, primaryColor, lightC
   };
 
   return (
-    <div className="relative flex w-full items-stretch">
-      {/* Absolute bottom border overlay to cover cell borders */}
-      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-black z-[5] pointer-events-none" />
+    <div className="flex w-full items-stretch border-b-2 border-black">
 
       {/* Year Column */}
       <div 
@@ -72,7 +70,7 @@ const GridRow: React.FC<GridRowProps> = ({ year, animeList, primaryColor, lightC
                 </div>
                 
                 {/* Tooltip with Image on Hover */}
-                <div className="absolute z-[150] bottom-full mb-2 hidden group-hover:flex flex-col items-center bg-black text-white p-2 rounded text-xs w-32 shadow-xl pointer-events-none">
+                <div className="absolute z-[9999] bottom-full mb-2 hidden group-hover:flex flex-col items-center bg-black text-white p-2 rounded text-xs w-32 shadow-xl pointer-events-none">
                   <img 
                       src={anime.images?.common || anime.images?.medium || anime.images?.small} 
                       alt={anime.name} 
